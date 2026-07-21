@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Cookies - Cerrajero 24horas</title>
+<meta name="robots" content="noindex,follow">
+<link class="icon" type="image/avif" href="favicon.avif">
+<link rel="shortcut icon" href="favicon.avif">
+<link rel="apple-touch-icon" href="favicon.avif">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+const traduccionesCookies = {
+    es: {
+        tituloCookies: "Política de Cookies",
+        AplicacionCookiesTitulo: "Introducción",
+        aplicacionCookiesTexto1: "Esta Política de Cookies se aplica al sitio web ",
+        AplicacionEnlace2: "https://electrosl24h.com",
+
+        queSonTitulo: "¿Qué son las cookies?",
+        queSonTexto1: "Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando visita un sitio web. Permiten que la página recuerde información sobre su visita, como el idioma preferido o configuraciones técnicas.",
+
+        tiposTitulo: "Tipos de cookies utilizadas",
+        tiposTexto1: "Este sitio web utiliza únicamente cookies técnicas necesarias para el correcto funcionamiento del servidor y la seguridad del sitio web.",
+        tiposTexto2: "No se utilizan cookies de análisis, publicidad, seguimiento ni elaboración de perfiles.",
+        tiposLista: [
+            "Cookies técnicas: necesarias para permitir la navegación y el funcionamiento básico del sitio web.",
+            "Cookies de seguridad: utilizadas para proteger el sitio frente a accesos no autorizados o ataques informáticos."
+        ],
+
+        baseLegalCookiesTitulo: "Base jurídica",
+        baseLegalCookiesTexto1: "La utilización de cookies técnicas se basa en el interés legítimo del titular para garantizar el correcto funcionamiento y seguridad del sitio web, conforme al artículo 6.1.f del Reglamento (UE) 2016/679 (RGPD).",
+        baseLegalCookiesTexto2: "Al tratarse exclusivamente de cookies técnicas necesarias, no se requiere el consentimiento previo del usuario conforme al artículo 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE).",
+
+        gestionTitulo: "Gestión y desactivación de cookies",
+        gestionTexto1: "El usuario puede configurar su navegador para bloquear o eliminar las cookies instaladas en su dispositivo.",
+        gestionTexto2: "La desactivación de cookies técnicas puede afectar al correcto funcionamiento del sitio web.",
+
+        tercerosTitulo: "Cookies de terceros",
+        tercerosTexto: "Este sitio web no utiliza cookies de terceros con fines publicitarios ni de análisis.",
+
+        conservacionCookiesTitulo: "Conservación de datos",
+        conservacionCookiesTexto: "Las cookies técnicas utilizadas tienen carácter temporal y se eliminan automáticamente al finalizar la sesión o transcurrido el tiempo estrictamente necesario para su finalidad.",
+
+        derechosCookiesTitulo: "Derechos del usuario",
+        derechosCookiesTexto1: "El usuario puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de datos enviando una solicitud al correo electrónico indicado en la ",
+
+        politicaPrivacidadLink: "Política de Privacidad",
+
+        modificacionesCookiesTitulo: "Modificaciones",
+        modificacionesCookiesTexto: "El titular se reserva el derecho a modificar la presente Política de Cookies para adaptarla a novedades legislativas o cambios en el sitio web.",
+
+        avisoLegalLink: "Aviso Legal",
+        volver: "← Volver a la página principal"
+    },
+    cat: {
+        tituloCookies: "Política de Cookies",
+        AplicacionCookiesTitulo: "Introducció",
+        aplicacionCookiesTexto1: "Aquesta Política de Cookies s'aplica al lloc web ",
+        AplicacionEnlace2: "https://electrosl24h.com",
+
+        queSonTitulo: "Què són les cookies?",
+        queSonTexto1: "Les cookies són petits fitxers de text que s'emmagatzemen al dispositiu de l'usuari quan visita un lloc web. Permeten que la pàgina recordi informació sobre la seva visita, com l'idioma preferit o configuracions tècniques.",
+
+        tiposTitulo: "Tipus de cookies utilitzades",
+        tiposTexto1: "Aquest lloc web utilitza únicament cookies tècniques necessàries per al correcte funcionament del servidor i la seguretat del lloc web.",
+        tiposTexto2: "No s'utilitzen cookies d'anàlisi, publicitat, seguiment ni elaboració de perfils.",
+        tiposLista: [
+            "Cookies tècniques: necessàries per permetre la navegació i el funcionament bàsic del lloc web.",
+            "Cookies de seguretat: utilitzades per protegir el lloc davant d'accés no autoritzat o atacs informàtics."
+        ],
+
+        baseLegalCookiesTitulo: "Base jurídica",
+        baseLegalCookiesTexto1: "L'ús de cookies tècniques es basa en l'interès legítim del titular per garantir el correcte funcionament i seguretat del lloc web, conforme a l'article 6.1.f del Reglament (UE) 2016/679 (RGPD).",
+        baseLegalCookiesTexto2: "En tractar-se exclusivament de cookies tècniques necessàries, no es requereix el consentiment previ de l'usuari conforme a l'article 22.2 de la Llei 34/2002 de Serveis de la Societat de la Informació i Comerç Electrònic (LSSI-CE).",
+
+        gestionTitulo: "Gestió i desactivació de cookies",
+        gestionTexto1: "L'usuari pot configurar el seu navegador per bloquejar o eliminar les cookies instal·lades al seu dispositiu.",
+        gestionTexto2: "La desactivació de cookies tècniques pot afectar el correcte funcionament del lloc web.",
+
+        tercerosTitulo: "Cookies de tercers",
+        tercerosTexto: "Aquest lloc web no utilitza cookies de tercers amb fins publicitaris ni d'anàlisi.",
+
+        conservacionCookiesTitulo: "Conservació de dades",
+        conservacionCookiesTexto: "Les cookies tècniques utilitzades tenen caràcter temporal i s'eliminen automàticament en finalitzar la sessió o transcorregut el temps estrictament necessari per a la seva finalitat.",
+
+        derechosCookiesTitulo: "Drets de l'usuari",
+        derechosCookiesTexto1: "L'usuari pot exercir els seus drets d'accés, rectificació, supressió, oposició, limitació del tractament i portabilitat de dades enviant una sol·licitud al correu electrònic indicat a la ",
+
+        politicaPrivacidadLink: "Política de Privacitat",
+
+        modificacionesCookiesTitulo: "Modificacions",
+        modificacionesCookiesTexto: "El titular es reserva el dret de modificar la present Política de Cookies per adaptar-la a novetats legislatives o canvis al lloc web.",
+
+        avisoLegalLink: "Avís Legal",
+        volver: "← Tornar a la pàgina principal"
+    },
+    en: {
+        tituloCookies: "Cookies Policy",
+        AplicacionCookiesTitulo: "Introduction",
+        aplicacionCookiesTexto1: "This Cookies Policy applies to the website ",
+        AplicacionEnlace2: "https://electrosl24h.com",
+
+        queSonTitulo: "What are cookies?",
+        queSonTexto1: "Cookies are small text files stored on the user's device when visiting a website. They allow the page to remember information about your visit, such as preferred language or technical settings.",
+
+        tiposTitulo: "Types of cookies used",
+        tiposTexto1: "This website only uses technical cookies necessary for the proper functioning of the server and website security.",
+        tiposTexto2: "No analytics, advertising, tracking or profiling cookies are used.",
+        tiposLista: [
+            "Technical cookies: necessary to enable basic navigation and website functionality.",
+            "Security cookies: used to protect the website against unauthorized access or cyberattacks."
+        ],
+
+        baseLegalCookiesTitulo: "Legal basis",
+        baseLegalCookiesTexto1: "The use of technical cookies is based on the legitimate interest of the owner to ensure the proper functioning and security of the website, according to Article 6.1.f of Regulation (EU) 2016/679 (GDPR).",
+        baseLegalCookiesTexto2: "Since only necessary technical cookies are used, prior user consent is not required under Article 22.2 of Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE).",
+
+        gestionTitulo: "Management and deactivation of cookies",
+        gestionTexto1: "Users can configure their browser to block or delete cookies installed on their device.",
+        gestionTexto2: "Disabling technical cookies may affect the proper functioning of the website.",
+
+        tercerosTitulo: "Third-party cookies",
+        tercerosTexto: "This website does not use third-party cookies for advertising or analytics purposes.",
+
+        conservacionCookiesTitulo: "Data retention",
+        conservacionCookiesTexto: "Technical cookies used are temporary and are automatically deleted at the end of the session or after the strictly necessary time for their purpose.",
+
+        derechosCookiesTitulo: "User rights",
+        derechosCookiesTexto1: "Users can exercise their rights of access, rectification, erasure, objection, restriction of processing and data portability by sending a request to the email indicated in the ",
+
+        politicaPrivacidadLink: "Privacy Policy",
+
+        modificacionesCookiesTitulo: "Modifications",
+        modificacionesCookiesTexto: "The owner reserves the right to modify this Cookies Policy to adapt it to legislative updates or changes on the website.",
+
+        avisoLegalLink: "Legal Notice",
+        volver: "← Back to the main page"
+    }
+};
+function cambiarIdiomaCookies(idioma) { 
+    document.querySelectorAll("[data-key]").forEach(elemento => {
+        const key = elemento.getAttribute("data-key");
+        const contenido = traduccionesCookies[idioma][key];
+
+        if (Array.isArray(contenido)) {
+            elemento.innerHTML = contenido.map(item => `<li>${item}</li>`).join('');
+        } else {
+            function reemplazarTexto(nodo, textoCompleto) {
+                nodo.childNodes.forEach(child => {
+                    if (child.nodeType === Node.TEXT_NODE) {
+                        child.textContent = textoCompleto;
+                    }
+                });
+            }
+            reemplazarTexto(elemento, contenido);
+        }
+    });
+}
+</script>
+
+<body>
+
+<header class="legal-header">
+    <div class="idiomas-legal">
+        <img src="esp.avif" alt="Español" onclick="cambiarIdiomaCookies('es')">
+        <img src="cat.avif" alt="Català" onclick="cambiarIdiomaCookies('cat')">
+        <img src="eng.avif" alt="English" onclick="cambiarIdiomaCookies('en')">
+    </div>
+    <h1 data-key="tituloCookies">Política de Cookies</h1>
+</header>
+<main class="legal">
+<h2 data-key="AplicacionCookiesTitulo">Introducción</h2>
+<p>
+    <span data-key="aplicacionCookiesTexto1">Esta Política de Cookies se aplica al sitio web </span>
+    <a href="https://electrosl24h.com" data-key="AplicacionEnlace2">https://electrosl24h.com</a>.
+</p>
+<!-- QUÉ SON LAS COOKIES -->
+<h2 data-key="queSonTitulo">¿Qué son las cookies?</h2>
+<p data-key="queSonTexto1">
+Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando visita un sitio web. Permiten que la página recuerde información sobre su visita, como el idioma preferido o configuraciones técnicas.
+</p>
+
+<!-- TIPO DE COOKIES UTILIZADAS -->
+<h2 data-key="tiposTitulo">Tipos de cookies utilizadas</h2>
+<p data-key="tiposTexto1">
+Este sitio web utiliza únicamente cookies técnicas necesarias para el correcto funcionamiento del servidor y la seguridad del sitio web.
+</p>
+<p data-key="tiposTexto2">
+No se utilizan cookies de análisis, publicidad, seguimiento ni elaboración de perfiles.
+</p>
+
+<ul data-key="tiposLista">
+<li>Cookies técnicas: necesarias para permitir la navegación y el funcionamiento básico del sitio web.</li>
+<li>Cookies de seguridad: utilizadas para proteger el sitio frente a accesos no autorizados o ataques informáticos.</li>
+</ul>
+
+<!-- BASE LEGAL -->
+<h2 data-key="baseLegalCookiesTitulo">Base jurídica</h2>
+<p data-key="baseLegalCookiesTexto1">
+La utilización de cookies técnicas se basa en el interés legítimo del titular para garantizar el correcto funcionamiento y seguridad del sitio web, conforme al artículo 6.1.f del Reglamento (UE) 2016/679 (RGPD).
+</p>
+<p data-key="baseLegalCookiesTexto2">
+Al tratarse exclusivamente de cookies técnicas necesarias, no se requiere el consentimiento previo del usuario conforme al artículo 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE).
+</p>
+
+<!-- GESTIÓN DE COOKIES -->
+<h2 data-key="gestionTitulo">Gestión y desactivación de cookies</h2>
+<p data-key="gestionTexto1">
+El usuario puede configurar su navegador para bloquear o eliminar las cookies instaladas en su dispositivo.
+</p>
+<p data-key="gestionTexto2">
+La desactivación de cookies técnicas puede afectar al correcto funcionamiento del sitio web.
+</p>
+
+<!-- COOKIES DE TERCEROS -->
+<h2 data-key="tercerosTitulo">Cookies de terceros</h2>
+<p data-key="tercerosTexto">
+Este sitio web no utiliza cookies de terceros con fines publicitarios ni de análisis.
+</p>
+
+<!-- CONSERVACIÓN -->
+<h2 data-key="conservacionCookiesTitulo">Conservación de datos</h2>
+<p data-key="conservacionCookiesTexto">
+Las cookies técnicas utilizadas tienen carácter temporal y se eliminan automáticamente al finalizar la sesión o transcurrido el tiempo estrictamente necesario para su finalidad.
+</p>
+
+<!-- DERECHOS -->
+<h2 data-key="derechosCookiesTitulo">Derechos del usuario</h2>
+<p data-key="derechosCookiesTexto1">
+El usuario puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de datos enviando una solicitud al correo electrónico indicado en la 
+</p>
+<p>
+<a href="politica-privacidad.html" data-key="politicaPrivacidadLink">Política de Privacidad</a>.
+</p>
+
+<!-- MODIFICACIONES -->
+<h2 data-key="modificacionesCookiesTitulo">Modificaciones</h2>
+<p data-key="modificacionesCookiesTexto">
+El titular se reserva el derecho a modificar la presente Política de Cookies para adaptarla a novedades legislativas o cambios en el sitio web.
+</p>
+
+<div class="volver-principal">
+    <a href="aviso-legal.html" data-key="avisoLegalLink">Aviso Legal</a> |
+    <a href="politica-privacidad.html" data-key="politicaPrivacidadLink">Política de Privacidad</a> |
+    <a href="index.html" data-key="volver">← Volver a la página principal</a>
+</div>
+
+</main>
+
+
+</body>
+</html>

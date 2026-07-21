@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviso Legal - Cerrajero 24horas</title>
+<link rel="icon" type="image/avif" href="favicon.avif">
+<link rel="shortcut icon" href="favicon.avif">
+<link rel="apple-touch-icon" href="favicon.avif">
+<link rel="stylesheet" href="style.css">
+</head>
+<script>
+const traduccionesAviso = {
+
+es: {
+
+tituloAviso: "Aviso Legal",
+AplicacionAvisoTitulo: "Introducción",
+aplicacionAvisoTexto1: "Este Aviso Legal se aplica al sitio web ",
+AplicacionEnlace3: "https://electrosl24h.com",
+
+identificacion_titulo: "Identificación del titular",
+identificacion_texto: "En cumplimiento del artículo 10 de la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa que el presente sitio web pertenece a:",
+
+nombreCompleto: " El Houcine Ghazi",
+NIE: " 55460268T",
+actividad: "Actividad:",
+actividad_desc: "Servicios de electricidad y fontanería",
+ubicacion_legal: "Ubicación:",
+ubicacion_desc: "Domicilio profesional a efectos de notificaciones: El Prat de Llobregat, España",
+telefono_legal: "Teléfono:",
+telefono_desc: "+34687503604",
+email_legal: "Email:",
+email_desc: "voltiaprovoltiapro@gmail.com",
+web_legal: "Web:",
+web_desc: "https://electrosl24h.com",
+
+noRelacionTitulo: "No relación comercial",
+noRelacionComercial: "El acceso al sitio web no supone en ningún caso el inicio de una relación comercial con el titular.",
+
+condicionesEconomicasTitulo: "Condiciones económicas",
+condicionesEconomicasTexto: "Los precios de los servicios no se muestran en el sitio web. Cualquier contratación se realizará previa aceptación de un presupuesto personalizado facilitado al cliente por los medios de contacto indicados.",
+
+condiciones: "Condiciones de uso",
+condicionesTexto: "El acceso a este sitio web atribuye la condición de usuario e implica la aceptación plena de las presentes condiciones, la legislación vigente y las normas de uso del sitio.",
+
+modificacionTitulo: "Modificación del sitio web",
+modificacionContenido: "El titular se reserva el derecho a modificar, suspendre o eliminar en cualquier momento y sin previo aviso los contenidos y servicios ofrecidos en el sitio web.",
+
+responsabilidad: "Responsabilidad",
+responsabilidadTexto: "El titular no se hace responsable del mal uso de los contenidos del sitio web ni de los daños que pudieran derivarse del acceso o uso de la información contenida, incluyendo enlaces externos.",
+responsabilidadTecnica: "El titular no se hace responsable de posibles errores técnicos, interrupciones del servicio, virus o daños derivados del acceso o uso del sitio web.",
+limitacionResponsabilidadExtra: "El titular no será responsable de interrupciones del servicio, fallos técnicos, caídas de red o cualquier otro daño indirecto derivado de causas ajenas a su control.",
+
+propiedad: "Propiedad intelectual",
+propiedadTexto: "Todos los contenidos de este sitio web, incluyendo textos, imágenes, diseños, logotipos y código fuente, están protegidos por derechos de propiedad intelectual del titular o de terceros. Queda prohibida su reproducción, distribución o modificación sin autorización expresa.",
+
+enlaces: "Enlaces",
+enlacesTexto: "Este sitio web puede contener enlaces a terceros. El titular no se hace responsable de los contenidos de dichas páginas ni de las políticas de privacidad que puedan aplicar.",
+
+proteccionDatos: "Protección de datos",
+medidasSeguridad: "El titular adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad y confidencialidad de los datos personales conforme a la normativa vigente.",
+
+proteccionDatos_pre: "El usuario puede consultar nuestra ",
+politicaPrivacidadLink: "Política de Privacidad",
+proteccionDatos_post: " para conocer cómo se gestionan sus datos personales, incluyendo sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad.",
+
+cookiesTitulo: "Cookies",
+cookiesAviso_pre: "Este sitio web utiliza cookies técnicas necesarias para su funcionamiento. Puede consultar nuestra ",
+politicaCookiesLink: "Política de Cookies",
+cookiesAviso_post: " para más información.",
+
+recordatorioPrivacidad_pre: "Al utilizar este sitio web, el usuario acepta el tratamiento de sus datos conforme a nuestra ",
+politicaPrivacidadLink2: "Política de Privacidad",
+recordatorioPrivacidad_post: ".",
+
+normativa: "Normativa aplicable",
+normativaTexto: "Cualquier disputa derivada del uso de este sitio web se regirá por la legislación española y los tribunales competentes.",
+
+actualizacionTitulo: "Actualización",
+fechaActualizacion: "Última actualización: mayo 2026.",
+
+volver: "← Volver a la página principal"
+},
+
+cat: {
+
+tituloAviso: "Avís legal",
+AplicacionAvisoTitulo: "Introducció",
+aplicacionAvisoTexto1: "Aquest Avís legal s'aplica al lloc web ",
+AplicacionEnlace3: "https://electrosl24h.com",
+
+identificacion_titulo: "Identificació del titular",
+identificacion_texto: "En compliment de l'article 10 de la Llei 34/2002 de serveis de la societat de la informació i de comerç electrònic (LSSI-CE), s'informa que aquest lloc web pertany a:",
+
+nombreCompleto: " El Houcine Ghazi",
+NIE: " 55460268T",
+actividad: "Activitat:",
+actividad_desc: "Serveis d'electricitat i lampisteria",
+ubicacion_legal: "Ubicació:",
+ubicacion_desc: "Domicili professional a efectes de notificacions: El Prat de Llobregat, Espanya",
+telefono_legal: "Telèfon:",
+telefono_desc: "+34687503604",
+email_legal: "Correu electrònic:",
+email_desc: "voltiaprovoltiapro@gmail.com",
+web_legal: "Web:",
+web_desc: "https://electrosl24h.com",
+
+noRelacionTitulo: "Absència de relació comercial",
+noRelacionComercial: "L'accés al lloc web no implica en cap cas l'inici d'una relació comercial amb el titular.",
+
+condicionesEconomicasTitulo: "Condicions econòmiques",
+condicionesEconomicasTexto: "Els preus dels serveis no es mostren al lloc web. Qualsevol contractació es realitzarà prèvia acceptació d'un pressupost personalitzat facilitat al client pels mitjans de contacte indicats.",
+
+condiciones: "Condicions d'ús",
+condicionesTexto: "L'accés a aquest lloc web atribueix la condició d'usuari i implica l'acceptació plena de les presents condicions, la legislació vigent i les normes d'ús del lloc.",
+
+modificacionTitulo: "Modificació del lloc web",
+modificacionContenido: "El titular es reserva el dret de modificar, suspendre o eliminar en qualsevol moment i sense previ avís els continguts i serveis oferts al lloc web.",
+
+responsabilidad: "Responsabilitat",
+responsabilidadTexto: "El titular no es fa responsable del mal ús dels continguts del lloc web ni dels danys que puguin derivar-se de l'accés o ús de la informació continguda, inclosos els enllaços externs.",
+responsabilidadTecnica: "El titular no es fa responsable de possibles errors tècnics, interrupcions del servei, virus o danys derivats de l'accés o ús del lloc web.",
+limitacionResponsabilidadExtra: "El titular no serà responsable d'interrupcions del servei, fallades tècniques, caigudes de xarxa o qualsevol altre dany indirecte derivat de causes alienes al seu control.",
+
+propiedad: "Propietat intel·lectual",
+propiedadTexto: "Tots els continguts d'aquest lloc web, incloent textos, imatges, dissenys, logotips i codi font, estan protegits per drets de propietat intel·lectual del titular o de tercers. Queda prohibida la seva reproducció, distribució o modificació sense autorització expressa.",
+
+enlaces: "Enllaços",
+enlacesTexto: "Aquest lloc web pot contenir enllaços a tercers. El titular no es fa responsable dels continguts d'aquestes pàgines ni de les seves polítiques de privacitat.",
+
+proteccionDatos: "Protecció de dades",
+medidasSeguridad: "El titular adopta les mesures tècniques i organitzatives necessàries per garantir la seguretat i confidencialitat de les dades personals conforme a la normativa vigent.",
+
+proteccionDatos_pre: "L'usuari pot consultar la nostra ",
+politicaPrivacidadLink: "Política de privacitat",
+proteccionDatos_post: " per conèixer com es gestionen les seves dades personals, incloent els seus drets d'accés, rectificació, supressió, oposició, limitació del tractament i portabilitat.",
+
+cookiesTitulo: "Cookies",
+cookiesAviso_pre: "Aquest lloc web utilitza cookies tècniques necessàries per al seu funcionament. Pot consultar la nostra ",
+politicaCookiesLink: "Política de cookies",
+cookiesAviso_post: " per a més informació.",
+
+recordatorioPrivacidad_pre: "En utilitzar aquest lloc web, l'usuari accepta el tractament de les seves dades conforme a la nostra ",
+politicaPrivacidadLink2: "Política de privacitat",
+recordatorioPrivacidad_post: ".",
+
+normativa: "Normativa aplicable",
+normativaTexto: "Qualsevol disputa derivada de l'ús d'aquest lloc web es regirà per la legislació espanyola i pels tribunals competents.",
+
+actualizacionTitulo: "Actualització",
+fechaActualizacion: "Última actualització: maig 2026.",
+
+volver: "← Tornar a la pàgina principal"
+},
+
+en: {
+
+tituloAviso: "Legal Notice",
+AplicacionAvisoTitulo: "Introduction",
+aplicacionAvisoTexto1: "This Legal Notice applies to the website ",
+AplicacionEnlace3: "https://electrosl24h.com",
+
+identificacion_titulo: "Owner identification",
+identificacion_texto: "In accordance with Article 10 of Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), this website is owned by:",
+
+nombreCompleto: " El Houcine Ghazi",
+NIE: " 55460268T",
+actividad: "Activity:",
+actividad_desc: "Electrical and plumbing services",
+ubicacion_legal: "Address:",
+ubicacion_desc: "Professional address for notifications: El Prat de Llobregat, Spain",
+telefono_legal: "Phone:",
+telefono_desc: "+34687503604",
+email_legal: "Email:",
+email_desc: "voltiaprovoltiapro@gmail.com",
+web_legal: "Website:",
+web_desc: "https://electrosl24h.com",
+
+noRelacionTitulo: "No commercial relationship",
+noRelacionComercial: "Access to the website does not in any case establish a commercial relationship with the owner.",
+
+condicionesEconomicasTitulo: "Pricing conditions",
+condicionesEconomicasTexto: "Service prices are not displayed on the website. Any service will be contracted only after prior acceptance of a personalized quotation provided to the client through the indicated contact methods.",
+
+condiciones: "Terms of use",
+condicionesTexto: "Accessing this website grants the status of user and implies full acceptance of these conditions, applicable law and website usage rules.",
+
+modificacionTitulo: "Website modifications",
+modificacionContenido: "The owner reserves the right to modify, suspend or remove at any time and without prior notice the contents and services offered on the website.",
+
+responsabilidad: "Liability",
+responsabilidadTexto: "The owner shall not be liable for misuse of the website contents or for damages arising from access to or use of the information contained, including external links.",
+responsabilidadTecnica: "The owner shall not be liable for technical errors, service interruptions, viruses or damages arising from accessing or using the website.",
+limitacionResponsabilidadExtra: "The owner shall not be liable for service interruptions, technical failures, network outages or any indirect damage beyond their control.",
+
+propiedad: "Intellectual property",
+propiedadTexto: "All website contents, including texts, images, designs, logos and source code, are protected by intellectual property rights of the owner or third parties. Reproduction, distribution or modification without express authorization is prohibited.",
+
+enlaces: "Links",
+enlacesTexto: "This website may contain links to third-party websites. The owner is not responsible for the contents of such pages or their privacy policies.",
+
+proteccionDatos: "Data protection",
+medidasSeguridad: "The owner adopts the necessary technical and organizational measures to guarantee the security and confidentiality of personal data in accordance with applicable regulations.",
+
+proteccionDatos_pre: "The user can consult our ",
+politicaPrivacidadLink: "Privacy Policy",
+proteccionDatos_post: " to learn how personal data is processed, including rights of access, rectification, erasure, objection, restriction of processing and data portability.",
+
+cookiesTitulo: "Cookies",
+cookiesAviso_pre: "This website uses technical cookies necessary for its operation. You can consult our ",
+politicaCookiesLink: "Cookies Policy",
+cookiesAviso_post: " for more information.",
+
+recordatorioPrivacidad_pre: "By using this website, the user accepts the processing of their data in accordance with our ",
+politicaPrivacidadLink2: "Privacy Policy",
+recordatorioPrivacidad_post: ".",
+
+normativa: "Applicable law",
+normativaTexto: "Any dispute arising from the use of this website shall be governed by Spanish law and submitted to the competent courts.",
+
+actualizacionTitulo: "Update",
+fechaActualizacion: "Last update: May 2026.",
+
+volver: "← Back to the main page"
+}
+
+};
+
+
+
+
+
+function cambiarIdiomaAviso(idioma) { 
+    document.querySelectorAll("[data-key]").forEach(elemento => {
+        const key = elemento.getAttribute("data-key");
+        const contenido = traduccionesAviso[idioma][key];
+
+        if (Array.isArray(contenido)) {
+            elemento.innerHTML = contenido.map(item => `<li>${item}</li>`).join('');
+        } else {
+            function reemplazarTexto(nodo, textoCompleto) {
+                nodo.childNodes.forEach(child => {
+                    if (child.nodeType === Node.TEXT_NODE) {
+                        child.textContent = textoCompleto;
+                    }
+                });
+            }
+            reemplazarTexto(elemento, contenido);
+        }
+    });
+}
+</script>
+<body>
+
+<header class="legal-header">    
+    <div class="idiomas-legal">
+        <img src="esp.avif" onclick="cambiarIdiomaAviso('es')">
+        <img src="cat.avif" onclick="cambiarIdiomaAviso('cat')">
+        <img src="eng.avif" onclick="cambiarIdiomaAviso('en')">
+    </div>
+    <h1 data-key="tituloAviso">Aviso Legal</h1>
+</header>
+
+<main class="legal">
+
+<!-- INTRODUCCIÓN -->
+<h2 data-key="AplicacionAvisoTitulo">Introducción</h2>
+<p>
+    <span data-key="aplicacionAvisoTexto1">Este Aviso Legal se aplica al sitio web </span>
+    <a href="https://electrosl24h.com" data-key="AplicacionEnlace3">https://electrosl24h.com</a>.
+</p>
+
+<!-- IDENTIFICACIÓN DEL TITULAR -->
+<h2 data-key="identificacion_titulo">Identificación del titular</h2>
+<p data-key="identificacion_texto">
+En cumplimiento del artículo 10 de la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa que el presente sitio web pertenece a:
+</p>
+
+<p data-key="nombreCompleto"><b>Nombre completo:</b> El Houcine Ghazi</p>
+<p data-key="NIE"><b>DNI:</b> 55460268T</p>
+<p><b data-key="actividad">Actividad:</b> <span data-key="actividad_desc">Servicios de electricidad y fontanería</span></p>
+<p><b data-key="ubicacion_legal">Ubicación:</b> <span data-key="ubicacion_desc">Domicilio profesional a efectos de notificaciones: El Prat de Llobregat, España</span></p>
+<p><b data-key="telefono_legal">Teléfono:</b> <span data-key="telefono_desc">+34687503604</span></p>
+<p><b data-key="email_legal">Email:</b> <a href="mailto:voltiaprovoltiapro@gmail.com" data-key="email_desc">voltiaprovoltiapro@gmail.com</a></p>
+<p><b data-key="web_legal">Web:</b> <a href="https://electrosl24h.com" data-key="web_desc">https://electrosl24h.com</a></p>
+
+<!-- NO RELACIÓN COMERCIAL -->
+<h2 data-key="noRelacionTitulo">No relación comercial</h2>
+<p data-key="noRelacionComercial">
+El acceso al sitio web no supone en ningún caso el inicio de una relación comercial con el titular.
+</p>
+
+<!-- CONDICIONES ECONÓMICAS -->
+<h2 data-key="condicionesEconomicasTitulo">Conditions económicas</h2>
+<p data-key="condicionesEconomicasTexto">
+Los precios de los servicios no se muestran en el sitio web. Cualquier contratación se realizará previa aceptación de un presupuesto personalizado facilitado al cliente por los medios de contacto indicados.
+</p>
+
+<!-- CONDICIONES DE USO -->
+<h2 data-key="condiciones">Condiciones de uso</h2>
+<p data-key="condicionesTexto">
+El acceso a este sitio web atribuye la condición de usuario e implica la aceptación plena de las presentes condiciones, la legislación vigente y las normas de uso del sitio.
+</p>
+
+<!-- MODIFICACIÓN DEL SITIO -->
+<h2 data-key="modificacionTitulo">Modificación del sitio web</h2>
+<p data-key="modificacionContenido">
+El titular se reserva el derecho a modificar, suspender o eliminar en cualquier momento y sin previo aviso los contenidos y servicios ofrecidos en el sitio web.
+</p>
+
+<!-- RESPONSABILIDAD -->
+<h2 data-key="responsabilidad">Responsabilidad</h2>
+<p data-key="responsabilidadTexto">
+El titular no se hace responsable del mal uso de los contenidos del sitio web ni de los daños que pudieran derivarse del acceso o uso de la información contenida, incluyendo enlaces externos.
+</p>
+<p data-key="responsabilidadTecnica">
+El titular no se hace responsable de posibles errores técnicos, interrupciones del servicio, virus o daños derivados del acceso o uso del sitio web.
+</p>
+<p data-key="limitacionResponsabilidadExtra">
+El titular no será responsable de interrupciones del servicio, fallos técnicos, caídas de red o cualquier otro daño indirecto derivado de causas ajenas a su control.
+</p>
+
+<!-- PROPIEDAD INTELECTUAL -->
+<h2 data-key="propiedad">Propiedad intelectual</h2>
+<p data-key="propiedadTexto">
+Todos los contenidos de este sitio web, incluyendo textos, imágenes, diseños, logotipos y código fuente, están protegidos por derechos de propiedad intelectual del titular o de terceros. Queda prohibida su reproducción, distribución o modificación sin autorización expresa.
+</p>
+
+<!-- ENLACES -->
+<h2 data-key="enlaces">Enlaces</h2>
+<p data-key="enlacesTexto">
+Este sitio web puede contener enlaces a terceros. El titular no se hace responsable de los contenidos de dichas páginas ni de las políticas de privacidad que puedan aplicar.
+</p>
+
+<!-- PROTECCIÓN DE DATOS -->
+<h2 data-key="proteccionDatos">Protección de datos</h2>
+
+<p data-key="medidasSeguridad">
+El titular adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad y confidencialidad de los datos personales conforme a la normativa vigente.
+</p>
+
+<p>
+    <span data-key="proteccionDatos_pre">El usuario puede consultar nuestra </span>
+    <a href="politica-privacidad.html" data-key="politicaPrivacidadLink">Política de Privacidad</a>
+    <span data-key="proteccionDatos_post"> para conocer cómo se gestionan sus datos personales, incluyendo sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad.</span>
+</p>
+
+<!-- COOKIES -->
+<h2 data-key="cookiesTitulo">Cookies</h2>
+<p>
+    <span data-key="cookiesAviso_pre">Este sitio web utiliza cookies técnicas necesarias para su funcionamiento. Puede consultar nuestra </span>
+    <a href="politica-cookies.html" data-key="politicaCookiesLink">Política de Cookies</a>
+    <span data-key="cookiesAviso_post"> para más información.</span>
+</p>
+
+<p>
+    <span data-key="recordatorioPrivacidad_pre">Al utilizar este sitio web, el usuario acepta el tratamiento de sus datos conforme a nuestra </span>
+    <a href="politica-privacidad.html" data-key="politicaPrivacidadLink2">Política de Privacidad</a>
+    <span data-key="recordatorioPrivacidad_post">.</span>
+</p>
+
+<!-- NORMATIVA APLICABLE -->
+<h2 data-key="normativa">Normativa aplicable</h2>
+<p data-key="normativaTexto">
+Cualquier disputa derivada del uso de este sitio web se regirá por la legislación española y los tribunales competentes.
+</p>
+
+<!-- FECHA -->
+<h2 data-key="actualizacionTitulo">Actualización</h2>
+<p data-key="fechaActualizacion">
+Última actualización: mayo 2026.
+</p>
+
+<div class="volver-principal">
+    <a href="politica-privacidad.html" data-key="politicaPrivacidadLink">Política de Privacidad</a> |
+    <a href="politica-cookies.html" data-key="politicaCookiesLink">Política de Cookies</a> |
+    <a href="index.html" data-key="volver">← Volver a la página principal</a>
+</div>
+
+</main>
+
+</body>
+</html>
