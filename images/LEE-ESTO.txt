@@ -1,0 +1,10 @@
+Coloca aquí tus imágenes con estos nombres exactos:
+- favicon.png
+- apple-touch-icon.png
+- og-cover.jpg
+- logo.png
+
+Detalles de tamaños y de cómo insertar el logo en
+"IMAGENES-A-AÑADIR.txt" (en la carpeta principal del proyecto).
+
+Puedes borrar este archivo de texto una vez hayas subido tus imágenes.
